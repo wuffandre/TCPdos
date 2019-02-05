@@ -1,0 +1,2 @@
+# TCPdos
+TCP starvation attack works by blocking transmission of FIN and RST packets from client to server, opening as many connections as possible and then closing it from the point of view of the client, as the client wont receive the FIN-ACK packets from the server, we lower the kernel TCP timeout values to recycle connections as soon as possible while the server thinks these connections are still open.
